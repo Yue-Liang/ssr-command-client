@@ -7,6 +7,9 @@
 # Created Time: Wed 03 Jun 2020 10:17:52 PM CST
 ##########################################################################
 
+work_path=$(dirname $(readlink -f $0))
+cd $work_path
+
 # 初始化环境变量
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 
